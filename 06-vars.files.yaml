@@ -4,5 +4,5 @@
     - vars.yaml
   tasks:
     - name: print info
-      ansible.buildin.debug:
+      ansible.builtin.debug:
         msg: "preparing for {{COURSE}}, Duration is {{DURATION}}, traineris {{TRAINER}}"
