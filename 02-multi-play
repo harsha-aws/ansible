@@ -3,9 +3,11 @@
   tasks: #list of serverss
     - name: PLAY-01 TASK-01
       ansible.builtin.debug:
+        msg: "this is from playbook 1"
 
 - name: PLAY-02
   hosts: web
   tasks: #list of serverss
     - name: PLAY-02 TASK-02
       ansible.builtin.debug:
+        msg: "this is from play book 2"
