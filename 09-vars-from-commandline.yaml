@@ -1,0 +1,6 @@
+- name: info from cmd
+  hosts: web
+  tasks:
+    - name: print info
+      ansible.builtin.debug:
+        msg: "Hi,my name is {{NAME}} is, {{GRETNG}}"
