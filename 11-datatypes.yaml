@@ -18,7 +18,7 @@
       aws:
         - iam
         - s3
-    tasks:
-      - name: get info
-        ansible.builtin.debug:
-          msg: "i am learning: {{COURSE}}, AND duration is {{DURATION}}, and topics are {{topics}}, and live{{live}},tools used are {{tools}}"
+  tasks:
+    - name: get info
+      ansible.builtin.debug:
+        msg: "i am learning: {{COURSE}}, AND duration is {{DURATION}}, and topics are {{topics}}, and live{{live}},tools used are {{tools}}"
