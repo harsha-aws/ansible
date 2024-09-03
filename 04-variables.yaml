@@ -8,13 +8,3 @@
     - name: print info
       ansible.builtin.debug:
         msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
-
-    - name: print info again
-      vars: 
-        COURSE: "java" #task level only this task can  use this
-      ansible.builtin.debug:
-        msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
-
-    - name: print info again and again
-      ansible.builtin.debug:
-        msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
