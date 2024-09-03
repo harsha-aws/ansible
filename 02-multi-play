@@ -2,10 +2,10 @@
   hosts: web
   tasks: #list of serverss
     - name: PLAY-01 TASK-01
-    ansible.builtin.debug:
+      ansible.builtin.debug:
 
 - name: PLAY-02
   hosts: web
   tasks: #list of serverss
     - name: PLAY-02 TASK-02
-    ansible.builtin.debug:
+      ansible.builtin.debug:
