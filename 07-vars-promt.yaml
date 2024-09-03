@@ -1,13 +1,13 @@
 - name: print info on the promt
   hosts: web
   vars_prompt:
-  - NAME: COURSE
+  - name: COURSE
     prompt: "please enter course details"
-  - NAME: DURATION
+  - name: DURATION
     prompt: "please enter duration"
-  - NAME: TRAINER
+  - name: TRAINER
     prompt: "please enter trainer details"
-tasks:
+  tasks:
   - name: print the course details
     ansible.builtin.debug:
       msg: "Hi, Iam learning: {{COURSE}}, DURATION IS {{DURATION}}, trainer is: {{TRAINER}}"
