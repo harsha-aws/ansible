@@ -1,10 +1,19 @@
 - name: variables to print
   hosts: web
-  vars: 
+  vars: # play level,all tasks in this play have access to use this
     COURSE: "aws devops"
-    DURATION: "'3 months"
+    DURATION: "3 months"
     TRAINER: "shiva"
   tasks: 
     - name: print info
       ansible.builtin.debug:
-        msg: "iam preparing {{COURSE}} duration {{DURATION}} trainer {{TRAINER}} shive"
+        msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
+
+    - name: print info again
+      COURSE: "java" #task level only this task can  use this
+      ansible.builtin.debug:
+        msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
+
+    - name: print info again
+      ansible.builtin.debug:
+        msg: "iam preparing: {{COURSE}}, duration: {{DURATION}}, trainer: {{TRAINER}} shive"
