@@ -1,0 +1,11 @@
+- name: PLAY-01
+  host: web
+  tasks: #list of serverss
+    - name: PLAY-01 TASK-01
+    ansible.buildin.debug:
+
+- name: PLAY-02
+  host: web
+  tasks: #list of serverss
+    - name: PLAY-02 TASK-02
+    ansible.buildin.debug:
