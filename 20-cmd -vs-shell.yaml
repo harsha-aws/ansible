@@ -1,0 +1,14 @@
+- name: cmd vs shell
+  hotsts: local
+  connection: local
+  tasks:
+  - name: execute the command
+    ansible.builtin.shell: ls -ltr >/tmp/output.txt
+
+  - name: check process
+    ansinle.builtin.shell: ps -ef | grep ssh
+    register: output
+  
+  - name: check process
+    ansinle.builtin.command: ps -ef | grep ssh
+    register: output
