@@ -32,3 +32,9 @@
         trainer: "sivakumar reddy"
     ansible.builtin.debug:
       msg: "{{ course | dict2items }}"
+
+  - name: conver to lowercase
+    vars:
+      ip: 123.23.34.11
+    ansible.builtin.debug:
+      msg: "{{ ip | ansible.utils.ipv4 }}"
