@@ -24,11 +24,11 @@
     ansible.builtin.debug:
       msg: "{{ number | unique }}"
 
-  - name: list to map
+  - name: convert map to list
     vars:
       course:
-        name: "devops"
-        trainer: "shiva"
+        name: "DevOps with AWS"
         duration: 120
-    ansible.builtin.dubug:
-      msg: " {{ course | dict2items }} "
+        trainer: "sivakumar reddy"
+    ansible.builtin.debug:
+      msg: "{{ course | dict2items }}"
