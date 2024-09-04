@@ -22,7 +22,7 @@
     vars:
       number: [1,2,2,2,2,2,4,5,7,3,2,3,7,9]
     ansible.builtin.debug:
-      msg: "{{ number | unique }}"
+      msg: "{{ number | unique }}, max: {{ number | max }}, min: {{ number | min }}"
 
   - name: convert map to list
     vars:
