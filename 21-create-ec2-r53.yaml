@@ -26,5 +26,5 @@
     loop: "{{ instance }}"
     register: ec2_instance
   - name: print ec2 instance
-    ansible.builtin.dubug:
+    ansible.builtin.debug:
       msg: "{{ ec2_instance }}"
